@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
+
+*{
+  font-family: 'Inter', sans-serif;
+}
+:root{
+ /*  Dark Mode */
+  --dark-bg-color: hsl(230, 17%, 14%);
+  --dark-bg-2color:hsl(232, 19%, 15%);
+  --dark-text-color:hsl(0, 0%, 100%);
+  --dark-card-bg:hsl(228, 28%, 20%);
+  --dark--2text-color:hsl(228, 34%, 66%);
+  
+
+  /*Light Mode */
+  --light-bg-color: hsl(0, 0%, 100%);
+  --light-bg-2color: hsl(225, 100%, 98%);
+  --light-text-color:hsl(228, 12%, 44%);
+  --light-card-bg:hsl(227, 47%, 96%);
+  --light--2text-color:hsl(230, 17%, 14%);
+
+  --instagram-gradient:linear-gradient(to right, #D5AC79, #DF5092);
+
+}
+
+
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient( hsl(230, 17%, 14%) ,hsl(232, 19%, 15%));
+  
+  color: var(--dark-text-color);
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
+}
+
+input[type="checkbox"]{
+  display: none;
+
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fa-sun, .fa-moon{
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.fa-moon{
+  display: none;
+}
+.fa-moon:hover{
+  transform: scale(1.1);
+}
+
+.fa-sun:hover{
+  transform: scale(1.1);
+}
+
+
+
+#block_header{
+  width: 80vw;
+  justify-content: center;
+ 
+}
+#header_1{
+  display:flex;
+flex-direction:initial;
+  justify-content:space-between;
+  align-items: center;
+  
+
+ 
+
+
+}
+
+.social_data{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  text-align: center;
+  
+  gap: 20px;
+  flex-wrap: wrap; 
+  
+ 
+
+}
+
+.social_data div{
+ 
+  width: 20vw;
+  padding: 10px;
+  
+  border-radius: 5px;
+ 
+
+  height: 30vh;
+  flex: 1
+}
+
+.social_data  h3{
+  font-size: 3rem;
+}
+
+.social_data p{
+  color: var(--dark--2text-color);
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+
+}
+
+.social_data span{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  font-size: 0.6rem;
+  letter-spacing: 0;
+
+}
+
+.social_data  a:link{
+  text-decoration: none;
+  color: var(--dark--2text-color);
+
+}
+
+.facebook{
+  border-top:solid  #198FF5;
+
+}
+.facebook i{
+  color: #198FF5;
+  
+}
+.twitter{
+  border-top:solid  #3498DA;
+}
+
+.twitter i{
+  color:  #3498DA;
+}
+.instagram {
+ 
+  border-top:solid  #DF5092;
+
+
+}
+
+.instagram i{
+ 
+  color:  #DF5092;
+
+
+}
+.youtube{
+  border-top:solid  red;
+}
+
+.youtube i{
+  color:  red;
+}
+
+
+
+
+.social_data div{
+  background-color: var(--dark-card-bg);
+  display: flex;
+  justify-content: space-between;
+  
+
+  border-radius: 5px;
+  flex: 1
+  
+ 
+
+}
+#midblock {
+
+flex-direction: column;
+
+
+}
+#midblock div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+
+}
+#bot{
+  display: flex;
+}
+
+
+
+#value{
+ 
+font-size: 1.5rem;
+}
+
+
+#midblock-bot{
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  
+}
+
+#midblock-bot span{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+#midblock-bot a{
+font-size: 15px;
+  
+}
+
+#midblock-bot i{
+  font-size: 18px;
+    
+  }
+
+#midblock-bot p{
+  color: var(--dark-text-color);
+}
+
+
+
+/* Light Theme*/
+.light{
+  background-image: linear-gradient( hsl(0, 0%, 100%) ,hsl(225, 100%, 98%));
+  transition: all 0.5s;
+  color: var(--light-text-color);
+}
+.light div{
+  background-color: var(--light-card-bg);
+  color: var(--light--2text-color);
+
+
+
+}
+
+.light #midblock-bot p{
+  color: var(--light-text-color);
+}
+
+.light .fa-sun{
+  display: none;
+}
+
+.light .fa-moon{
+  display: flex;
+}
